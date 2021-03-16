@@ -1,6 +1,6 @@
 <?php
 
-$myFile=fopen("C://Users/Liyah/Documents/php/client2.txt", "a");
+$myFile=fopen("C://Users/Liyah/Documents/php/client2.txt", "r+");
 for($i=0;$i<8;$i++){
     $nom=readline("Nom :");
     $prenom=readline("Prénom :");
