@@ -1,9 +1,0 @@
-Nom: Dufour, Prénom: Caroline, Mail: dufour.caroline@gmail.com, N°: 0654879632
-Nom: Dubois, Prénom: Arthur, Mail: dub.Ar@live.fr, N°: 0325458796
-Nom: Salmon, Prénom: Jessica, Mail: jess154@live.com, N°: 0254879632
-Nom: Doe, Prénom: John, Mail: john.doe@gmail.com, N°: 0214151619
-Nom: Akka, Prénom: Mickael, Mail: akka@hotmail.fr, N°: 0456896547
-Nom: Bouchart, Prénom: Tony, Mail: bou.to@live.fr, N°: 0712457889
-Nom: Porto, Prénom: Rico, Mail: rico911@hotmail.fr, N°: 0598875421
-Nom: Los, Prénom: Angeles, Mail: los.angeles@gmail.com, N°: 0320415263
-3625
