@@ -12,30 +12,32 @@
 		
 	</head> 
     <body>
-        <form action="traitement.php" method="post">
+        <form class="formulaire" action="traitement.php" method="post">
             <fieldset>
                 <legend>Remplissez ce formulaire</legend>
-                <div class="col-auto">
+                <div class="form-group">
                     <label for="nom" class="form-label">Nom</label> :
                     <input type="text" class="form-control" name="nom" required autofocus placeholder="ex: Dupuis">
                 </div>
-                <div class="col-auto">
+                <div class="form-group">
                     <label for="prenom" class="form-label">Prénom</label> :
                     <input type="text" class="form-control" name="prenom" required autofocus placeholder="ex: Liyah">
                 </div>
-                <div class="col-auto">
+                <div class="form-group">
                     <label for="mail" class="form-label">E-mail</label> :
                     <input type="email" class="form-control" name="mail" required autofocus placeholder="ex: Liyah@live.fr">
                 </div>
-                <div class="col-auto">
+                <div class="form-group">
                     <label for="telephone" class="form-label">N° Téléphone</label> :
                     <input type="tel" class="form-control" name="telephone" required autofocus placeholder="ex: 0654879632">
                 </div>
-                <div class="col-auto">
-                    <button type="submit" name="formconnexion" class="btn btn-success">Valider</button>
-                    <button type="reset" class="btn btn-danger">Réinitialiser</button>
+                <div>
+                    <button type="submit" name="formconnexion" class="btn btn-success btn-block">Valider</button>
                 </div>
-                </fieldset>
+                <div style="margin-top: 5px;">
+                    <button type="reset" class="btn btn-link btn-block">Réinitialiser</button>
+                </div>
+            </fieldset>
         </form>
     </body>
 </html>	
