@@ -12,3 +12,6 @@ if(isset($_REQUEST['formconnexion'])){
     fclose($myFile);
 
 }
+?>
+<h1>Redirection dans 3 secondes ...</h1>
+<meta http-equiv="refresh" content="3;URL=tableau.php"/>
