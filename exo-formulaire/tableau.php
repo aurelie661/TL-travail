@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <link rel="stylesheet" href="style.css">
     <title>exercice_php</title>
-</head>
+ 
 
     <body>
         <div class="container">
@@ -42,8 +42,8 @@
                             echo "<td> $tabLigne[2]  </td>";
                             echo "<td> $tabLigne[3]  </td>";
                             echo "<td> $tabLigne[4]  </td>";
-                            echo "<td><a href='modification.php?id=$tabLigne[0]'><button class='btn btn-warning'>Modifier</button></a></td>";
-                            echo "<td><a href='suppression.php?id=$tabLigne[0]'><button class='btn btn-warning'>Supprimer</button></a></td>";
+                            echo "<td><a href='modification.php?id=$tabLigne[0]'><button name='buttonMod'class='btn btn-warning'>Modifier</button></a></td>";
+                            echo "<td><a href='suppression.php?id=$tabLigne[0]'><button name='buttonSup'class='btn btn-warning'>Supprimer</button></a></td>";
                         echo "</tr>";
                             
                         }

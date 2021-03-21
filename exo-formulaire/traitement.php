@@ -2,17 +2,27 @@
 
 
 if(isset($_REQUEST['formconnexion'])){
-    
-    $id=     htmlspecialchars($_REQUEST['id']);
+    $newId = generateNextId();
     $nom=    htmlspecialchars($_REQUEST['nom']);
     $prenom= htmlspecialchars($_REQUEST['prenom']);
     $mail=   htmlspecialchars($_REQUEST['mail']);
     $numTel= htmlspecialchars($_REQUEST['telephone']);
     $myFile=fopen("personne.txt", "a+") or die (" impossible d'ouvrir dans le fichier");
-    $nouvelleLigne="\n".$id.",".$nom.",".$prenom.",".$mail.",".$numTel;
+    $nouvelleLigne="\n".$newId.",".$nom.",".$prenom.",".$mail.",".$numTel;
     $fileWrite=fwrite($myFile,$nouvelleLigne);
     fclose($myFile);
 
+}
+function generateNextId()
+{
+    $file = fopen("personne.txt", "r");
+    while (!feof($file)) {
+        $ligne = fgets($file);
+        $infos = explode(",", $ligne);
+        if (feof($file)) {
+            return $infos[0] + 1;
+        }
+    }
 }
 
 if (isset($_REQUEST["formmodification"])) {
@@ -28,7 +38,5 @@ if (isset($_REQUEST["formmodification"])) {
     file_put_contents($myFile,implode("\n",$lignes));
     
 }
-
+header("location: tableau.php");
 ?>
-<h1>Redirection dans 3 secondes ...</h1>
-<meta http-equiv="refresh" content="3;URL=tableau.php"/>

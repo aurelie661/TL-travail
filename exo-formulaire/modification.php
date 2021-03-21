@@ -29,7 +29,7 @@ if (isset($_GET['id'])) {
       
 }
 ?>
-    <form class="formulaire" action="traitement.php" method="POST">
+    <form class="formulaire" action="traitement.php?id=<?php echo $_GET["id"]; ?>" method="POST">
         <legend>Modification</legend>
         <div class="form-group">
             <label for="id"  class="form-label">Id</label> :
@@ -49,7 +49,7 @@ if (isset($_GET['id'])) {
         </div>
         <div class="form-group">
             <label for="telephone" class="form-label">N°Tel</label> :
-            <input type="text" class="form-control" name="telephone" value="<?php echo $personneSelectionner[4]; ?>"/>
+            <input type="tel" class="form-control" name="telephone" value="<?php echo $personneSelectionner[4]; ?>"/>
         </div>
         <div>
             <button type="submit" name="formmodification" class="btn btn-success btn-block">Valider</button>
