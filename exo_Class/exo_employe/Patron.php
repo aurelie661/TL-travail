@@ -14,8 +14,13 @@ class Patron extends Employe{
     }
 
     public function getSalaire(): float{
-        $salaire = self::$cA*$this->pourcentage/100;
-        return $salaire;
+        if($this->pourcentage != null){
+            return self::$cA*$this->pourcentage/100;
+        }
+        else{
+            return 0;
+        }
+         
     }
 
     public function afficher(): void{
